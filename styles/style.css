@@ -4,6 +4,12 @@
   src: url("../fonts/shabnam.ttf") format("truetype"),
     url("../fonts/shabnam.woff") format("woff");
 }
+@font-face {
+  font-family: "Yekan";
+  src: url("../fonts/Yekan.eot") format("eot");
+  src: url("../fonts/Yekan.ttf") format("truetype"),
+    url("../fonts/Yekan.woff") format("woff");
+}
 
 * {
   padding: 0;
@@ -12,6 +18,9 @@
   list-style: none;
   text-decoration: none;
   box-shadow: none !important;
+}
+.section {
+  padding: 100px 0;
 }
 
 body {
@@ -92,4 +101,236 @@ nav .brand-logo {
 }
 .home .scroll-down img {
   width: 30px;
+}
+/* about */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about {
+  width: 100%;
+}
+.about img {
+  width: 100%;
+}
+.about .about-content h4 {
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.about .about-content p {
+  line-height: 25px;
+  font-size: 15px;
+}
+.about .about-content h4::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  background: #ff8f00;
+}
+.about .about-item {
+  text-align: center;
+  margin-top: 100px;
+}
+.about .about-item h4 {
+  font-family: "Yekan";
+}
+.about button {
+  background: #ff8f00;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 40px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* serveice */
+.service {
+  width: 100%;
+}
+.service h4 {
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.service h4::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #ff8f00;
+  bottom: 0;
+}
+.service .service-item {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.service .service-item:hover img {
+  transform: scale(1.1);
+}
+.service .service-item img {
+  width: 100%;
+  height: 300px;
+  transition: all 0.3s linear;
+}
+.service .service-item span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+.service .service-item span p {
+  font-size: 25px;
+  color: #fff;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+.service .service-item:hover span {
+  opacity: 0;
+}
+.service .service-item:hover span p {
+  transform: translateX(200px);
+  opacity: 0;
+}
+/* work */
+.work {
+  width: 100%;
+}
+.work h4 {
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.work h4::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #ff8f00;
+  bottom: 0;
+}
+.work .work-item {
+  position: relative;
+  margin-top: 20px;
+  height: 300px;
+  overflow: hidden;
+}
+.work .work-item img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+.work .work-item:hover img {
+  transform: scale(1);
+}
+.work .work-item span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.work .work-item:hover span {
+  background: rgba(0, 0, 0, 0.8);
+}
+.work .work-item span svg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 25px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.work .work-item span p {
+  position: absolute;
+  bottom: 10px;
+  right: 150px;
+  color: #fff;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.work .work-item:hover svg,
+.work .work-item:hover p {
+  opacity: 1;
+}
+.work .work-item:hover p {
+  transform: translateX(80px);
+}
+/* contact */
+.contact {
+  width: 100%;
+}
+.contact .contact-img {
+  width: 100%;
+  background-image: url(../img/contact-bg.jpg);
+  padding: 200px 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .contact-img .title h4 {
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.contact .contact-img .title h4::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #ff8f00;
+  bottom: 0;
+}
+.contact .contact-desc {
+  width: 100%;
+}
+
+.contact .contact-desc input {
+  width: 50%;
+}
+.input-field > label {
+  position: relative;
+  font-size: 12px;
+}
+.contact .from-btn {
+  width: 100%;
+  text-align: center;
+}
+.contact .from-btn button {
+  background: #ff8f00;
+  color: #fff;
+  padding: 10px 75px;
+  border: 2px solid #ff8f00;
+  border-radius: 25px;
+  transition: all 0.3s ease-in;
+}
+.contact .from-btn button:hover {
+  background: transparent;
+  color: black;
+  cursor: pointer;
 }
