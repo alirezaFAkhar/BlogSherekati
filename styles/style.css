@@ -308,6 +308,13 @@ nav .brand-logo {
 }
 .contact .contact-desc {
   width: 100%;
+  padding: 0 65px;
+}
+.contact .contact-desc form {
+  margin-top: -100px;
+  background: #fff;
+  padding: 45px;
+  box-sizing: border-box;
 }
 
 .contact .contact-desc input {
@@ -333,4 +340,48 @@ nav .brand-logo {
   background: transparent;
   color: black;
   cursor: pointer;
+}
+.contact .info {
+  text-align: center;
+}
+.contact .info h6 {
+  color: rgb(95, 95, 95);
+}
+.contact .info p {
+  color: #999;
+}
+.contact .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.contact .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .social ul li {
+  margin: 0 20px;
+}
+.contact .social ul li a {
+  color: #777;
+}
+.contact .social ul li a svg {
+  font-size: 35px;
+}
+/* footer */
+footer {
+  border-top: 2px solid #999;
+  padding: 50px 0;
+  text-align: center;
+}
+footer .fa-heart {
+  color: rgb(185, 0, 0);
+}
+footer .fa-code {
+  color: rgb(5, 92, 143);
+}
+footer h6 {
+  font-size: 20px;
 }
