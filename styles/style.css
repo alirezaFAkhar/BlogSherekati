@@ -231,6 +231,10 @@ nav .brand-logo {
   height: 300px;
   overflow: hidden;
 }
+.work .work-item .work-item-inner {
+  height: 100%;
+}
+
 .work .work-item img {
   width: 100%;
   height: 100%;
@@ -277,6 +281,85 @@ nav .brand-logo {
 .work .work-item:hover p {
   transform: translateX(80px);
 }
+/* lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.lightbox .img-box {
+  width: 1200px;
+  height: 600px;
+  padding: 60px 0;
+  position: relative;
+}
+.lightbox .img-box .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.lightbox .img-box .close svg {
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.lightbox .img-box .lightbox-img {
+  width: 100%;
+  height: 100%;
+}
+.lightbox .img-box .lightbox-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.lightbox .img-box .lightbox-control {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+  font-size: 30px;
+}
+.lightbox .img-box .lightbox-control .next {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.lightbox .img-box .lightbox-control .prev {
+  position: absolute;
+  left: 30px;
+  height: 100%;
+  cursor: pointer;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.lightbox .img-box .lightbox-control .next svg,
+.lightbox .img-box .lightbox-control .prev svg {
+  width: 40px;
+  height: 40px;
+}
+.lightbox .img-box .lightbox-control .next:hover svg,
+.lightbox .img-box .lightbox-control .prev:hover svg {
+  background: rgba(0, 0, 0, 0.7);
+}
+
 /* contact */
 .contact {
   width: 100%;
