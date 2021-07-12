@@ -32,7 +32,6 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
 }
 nav ul a {
   font-size: 19px !important ;
@@ -51,6 +50,7 @@ nav .brand-logo {
   background-position: center;
   height: 100vh;
   position: relative;
+  z-index: -1;
 }
 .home .overlay {
   position: absolute;
@@ -226,6 +226,9 @@ nav .brand-logo {
   bottom: 0;
 }
 .work .work-item {
+  margin-top: 20px;
+}
+.work .work-item-inner {
   position: relative;
   margin-top: 20px;
   height: 300px;
@@ -294,9 +297,12 @@ nav .brand-logo {
   justify-content: center;
   z-index: 1000;
 }
+.lightbox.open {
+  display: flex;
+}
 .lightbox .img-box {
   width: 1200px;
-  height: 600px;
+  height: 800px;
   padding: 60px 0;
   position: relative;
 }
@@ -467,4 +473,36 @@ footer .fa-code {
 }
 footer h6 {
   font-size: 20px;
+}
+@media screen and (max-width: 992px) {
+  .about .about-item h4 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about button {
+    margin-bottom: 30px;
+  }
+  .lightbox .img-box {
+    width: 700px;
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home .home-content h1 {
+    font-size: 20px;
+  }
+  .home .home-content p {
+    font-size: 17px;
+  }
+  .lightbox .img-box {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home .home-content h1 {
+    font-size: 15px;
+  }
 }
